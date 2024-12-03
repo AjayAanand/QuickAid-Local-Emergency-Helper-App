@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "516870673074",
+    "project_id": "quickaid-emergency-helper-app",
+    "storage_bucket": "quickaid-emergency-helper-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516870673074:android:3a370b60566f2c6ae8efab",
+        "android_client_info": {
+          "package_name": "com.quickaid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFJ-pd_gv56Csr8lw8cvuxa9F1vNOGu6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
