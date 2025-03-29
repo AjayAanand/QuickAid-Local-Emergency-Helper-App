@@ -8,10 +8,12 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
+import Routes from './src/Routes';
+import MainProvider from './src/provider/mainProvider';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -28,17 +30,12 @@ function App(): React.JSX.Element {
   const safePadding = '5%';
 
   return (
-    <View style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <View style={{padding: safePadding}}>
-          <Text>Quick Helper</Text>
-          
-        </View>
-      </ScrollView>
-    </View>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <MainProvider>
+          <StatusBar translucent backgroundColor="transparent" barStyle="dark-content" />
+          <Routes />
+        </MainProvider>
+    </GestureHandlerRootView>
   );
 }
 
